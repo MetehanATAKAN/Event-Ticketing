@@ -1,4 +1,4 @@
-import { registerUser } from "./auth.service.js";
+import { loginUser, registerUser } from "./auth.service.js";
 
 export async function register(req, res) {
   try {
@@ -16,3 +16,18 @@ export async function register(req, res) {
     });
   }
 }
+export const login = async (req, res) => {
+  try {
+    const result = await loginUser(req.body);
+    return res.status(200).json({
+      message: "Login successful",
+      data: result,
+    });
+  } catch (error) {
+    const statusCode = error.statusCode || 500;
+
+    return res.status(statusCode).json({
+      message: error.message || "Something went wrong",
+    });
+  }
+};
