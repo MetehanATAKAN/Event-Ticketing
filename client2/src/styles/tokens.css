@@ -1,0 +1,14 @@
+@theme {
+  --color-brand-background: #08111f;
+  --color-brand-foreground: #f5f7fb;
+  --color-brand-surface: rgba(10, 22, 39, 0.78);
+  --color-brand-surface-strong: rgba(7, 17, 31, 0.92);
+  --color-brand-border: rgba(147, 197, 253, 0.14);
+  --color-brand-muted: #9fb0c9;
+  --color-brand-accent: #f97316;
+  --color-brand-accent-strong: #fb923c;
+  --color-brand-secondary: #22c55e;
+  --shadow-panel: 0 30px 80px rgba(3, 9, 19, 0.45);
+  --radius-shell: 2rem;
+  --radius-card: 1.75rem;
+}
